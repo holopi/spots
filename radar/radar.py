@@ -13,6 +13,8 @@ import operator
 import os
 import simplejson
 import shutil
+import extensions_pb2
+
 
 __author__ = 'Wolfrax'
 
