@@ -20,7 +20,7 @@ __author__ = 'Wolfrax'
 This module implements the application using 2 classes
 
 1. Radar, it runs in a separate thread, reads from a message queue, decode messages and adds to a display queue
-   The display queue is read recurrently (once per sec) from a RepeatTimer thread and is displayed
+   The display queue is read recurrently (once per second) from a RepeatTimer thread and is displayed
 
 2. TextDisplay, implements a text table format using curses. It reads quitter objects and format the output.
 
@@ -52,7 +52,7 @@ The blip dictionary is in turn read recurrently by a separate thread for display
 
 To collect some (rather pointless) statistics using call signs counts a smple FlightDB class exists.
 Call sign statistics is stored into a json structure which is stored recurrently on file (file name is configurable in 
-the config file, if "flight db name" is "" this function is not used). The database is dumped to file ever 10 min,
+the config file, if "flight db name" is "" this function is not used). The database is dumped to file every 10 min,
 before dumping the current file is copied to a backup-file. The backup file is used when the radar is re-staring 
 and we get an exception trying to read the current database file (the file is probably corrupt).
 
